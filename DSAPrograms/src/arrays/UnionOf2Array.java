@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dsaprograms.Arrays;
+package arrays;
 
 import com.sun.org.apache.xml.internal.resolver.Catalog;
 import java.util.HashSet;

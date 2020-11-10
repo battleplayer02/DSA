@@ -1,5 +1,5 @@
 /*package whatever //do not write package name here */
-package dsaprograms.Arrays;
+package arrays;
 
 import java.util.*;
 import java.lang.*;

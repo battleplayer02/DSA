@@ -1,4 +1,4 @@
-package dsaprograms.Arrays;
+package arrays;
 
 import java.util.*;
 
