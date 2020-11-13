@@ -1,8 +1,43 @@
 package Recurssion;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
-public class RatNazePaths {
-    public static void main(String[] args) {
-        
+public class RatMazePaths {
+
+    public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {
+        if (sr > dr || sc > dc) {
+            return new ArrayList<>();
+        }
+
+        if (sr == dr && sc == dc) {
+            ArrayList<String> bres = new ArrayList<>();
+            bres.add("");
+            return bres;
+        }
+
+        ArrayList<String> hpaths = getMazePaths(sr, sc + 1, dr, dc);
+        ArrayList<String> vpaths = getMazePaths(sr + 1, sc, dr, dc);
+        ArrayList<String> paths = new ArrayList<>();
+
+        for (String hpath : hpaths) {
+            paths.add('h' + hpath);
+        }
+
+        for (String vpath : vpaths) {
+            paths.add('v' + vpath);
+        }
+
+        return paths;
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        int m = Integer.parseInt(br.readLine());
+        ArrayList<String> paths = getMazePaths(0, 0, n - 1, m - 1);
+        System.out.println(paths);
     }
 }
