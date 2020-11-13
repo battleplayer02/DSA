@@ -52,7 +52,6 @@ public class Sudoku {
                 arr[i][j] = scn.nextInt();
             }
         }
-
         solveSudoku(arr, 0, 0);
     }
 
