@@ -1,4 +1,4 @@
-package DynamicProgramming.Memoization;
+package DynamicProgramming;
 
 import java.util.Scanner;
 

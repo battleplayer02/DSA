@@ -3,17 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/study/DSA/DSAPrograms/src/Array/ArrayConsistOf012.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/trees/BinaryTrees/tree.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/trees/BinaryTrees/BST/SearchAndInsertion.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/DynamicProgramming/Tabulation/Factorial.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/Recurssion/Factorial.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/Array/RotateAnArray.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/FactorialOfLargerNo.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/StackAndQueue/NormalQueue.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/SquaresLessThan.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/LinkList/ReverseALinkList.java</file>
-            <file>file:/D:/study/DSA/DSAPrograms/src/DynamicProgramming/Memoization/FactorialOfLargeNumber.java</file>
+            <file>file:/D:/study/DSA/DSAPrograms/src/DynamicProgramming/Goldmine_L1.java</file>
+            <file>file:/D:/study/DSA/DSAPrograms/src/DynamicProgramming/Min_Cost_Maze_Traversal.java</file>
+            <file>file:/D:/study/DSA/DSAPrograms/src/DynamicProgramming/Target_Sum_Subset.java</file>
         </group>
     </open-files>
 </project-private>

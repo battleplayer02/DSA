@@ -1,4 +1,3 @@
-import static DynamicProgramming.Memoization.FactorialOfLargeNumber.fact;
 import java.math.BigInteger;
 import java.util.Scanner;
 

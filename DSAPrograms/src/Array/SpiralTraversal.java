@@ -19,8 +19,8 @@ public class SpiralTraversal {
       }
       int minr = 0;
       int minc = 0;
-      int maxr = arr.length;
-      int maxc = arr[0].length;
+      int maxr = arr.length-1;
+      int maxc = arr[0].length-1;
       int cnt = 0;
       int tne  = n * m;
       while(cnt < tne){

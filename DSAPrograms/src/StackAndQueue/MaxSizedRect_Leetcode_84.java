@@ -3,12 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DynamicProgramming.Tabulation;
+package StackAndQueue;
 
 /**
  *
  * @author Administrator
  */
-public class MinimumJumps {
-    
+public class MaxSizedRect_Leetcode_84 {
+
+    public int largestRectangleArea(int[] heights) {
+
+    }
+
+    public static void main(String[] args) {
+
+    }
 }

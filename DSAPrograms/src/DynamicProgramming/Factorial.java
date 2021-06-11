@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DynamicProgramming.Tabulation;
+package DynamicProgramming;
 
-import static DynamicProgramming.Memoization.FactorialOfLargeNumber.fact;
 import java.util.Scanner;
 
 /**
