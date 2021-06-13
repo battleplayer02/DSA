@@ -12,7 +12,7 @@ package StackAndQueue;
 public class MaxSizedRect_Leetcode_84 {
 
     public int largestRectangleArea(int[] heights) {
-
+        return 0;
     }
 
     public static void main(String[] args) {
