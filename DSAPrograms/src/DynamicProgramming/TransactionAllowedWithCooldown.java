@@ -34,7 +34,7 @@ public class TransactionAllowedWithCooldown {
             } else {
                 int nBSP = Math.max(oCSP - arr[day], oBSP);
                 int nSSP = Math.max(oSSP, arr[day] + oBSP);
-                int nCSP = nSSP;
+                int nCSP = oSSP;
                 oBSP = nBSP;
                 oSSP = nSSP;
                 oCSP = nCSP;

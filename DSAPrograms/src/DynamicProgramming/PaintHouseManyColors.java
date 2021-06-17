@@ -32,11 +32,11 @@ public class PaintHouseManyColors {
                     int min = 1_000_000_000;
                     for (int i = 0; i < nop; i++) {
                         if (i != c) {
-                            min = Math.min(min, dp[r][i]);
+                            min = Math.min(min, dp[r - 1][i]);
                         }
                     }
-                    System.out.println(min);
                     dp[r][c] = min + cost[r][c];
+//                    System.out.println(min);
                 }
             }
         }
@@ -44,6 +44,6 @@ public class PaintHouseManyColors {
         for (int i = 0; i < nop; i++) {
             min = Math.min(min, dp[noh - 1][i]);
         }
-        System.out.println(min);
+        System.out.println("ans:" + min);
     }
 }
