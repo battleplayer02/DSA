@@ -13,41 +13,38 @@ import java.io.InputStreamReader;
  * @author Administrator
  */
 public class Nqueens_Problem_Chess_Permutation {
-cxc
-    public static boolean IsQueenSafe(int[][] chess, int row, int col) {
+
+    public static boolean IsQueenSafe(int[][] chess, int r, int c) {
         // write your code here
-        for (int i = 0, j = col; i < chess.length; i++) {
-            if (chess[i][j] > 0) {
+        for (int row = 0, col = 0; row < chess.length && col < chess.length; row++, col++) {
+            if (chess[row][c] != 0) {
+                return false;
+            }
+            if (chess[r][col] != 0) {
                 return false;
             }
         }
 
-        for (int i = row, j = 0; j < chess[0].length; j++) {
-            if (chess[i][j] > 0) {
+        for (int row = r - 1, col = c - 1; row >= 0 && col >= 0; row--, col--) {
+            if (chess[row][col] != 0) {
                 return false;
             }
         }
 
-        for (int i = row - 1, j = col + 1; i < chess.length && j < chess[0].length; i++, j--) {
-            if (chess[i][j] > 0) {
+        for (int row = r - 1, col = c + 1; row >= 0 && col < chess.length; row--, col++) {
+            if (chess[row][col] != 0) {
                 return false;
             }
         }
 
-        for (int i = row + 1, j = col + 1; i < chess.length && j < chess[0].length; i--, j--) {
-            if (chess[i][j] > 0) {
+        for (int row = r + 1, col = c + 1; row < chess.length && col < chess.length; row++, col++) {
+            if (chess[row][col] != 0) {
                 return false;
             }
         }
 
-        for (int i = row + 1, j = col - 1; i < chess.length && j >= 0; i++) {
-            if (chess[i][j] > 0) {
-                return false;
-            }
-        }
-
-        for (int i = row - 1, j = col - 1; i <= 0 && j >= 0; i++) {
-            if (chess[i][j] > 0) {
+        for (int row = r + 1, col = c - 1; row < chess.length && col >= 0; row++, col--) {
+            if (chess[row][col] != 0) {
                 return false;
             }
         }

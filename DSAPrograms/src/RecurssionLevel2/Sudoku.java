@@ -29,7 +29,7 @@
  6 9 2 3 5 1 8 7 4 
  7 4 5 2 8 6 3 1 9 
  */
-package Recurssion;
+package RecurssionLevel2;
 
 import java.util.Scanner;
 
