@@ -10,5 +10,7 @@ package Array;
  * @author Administrator
  */
 public class MergeTwoSortedArray {
-    
+
+    public static void main(String[] args) {
+    }
 }

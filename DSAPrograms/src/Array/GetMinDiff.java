@@ -11,6 +11,7 @@ package Array;
 import java.io.*;
 import java.util.*;
 
+// Driver Code
 public class GetMinDiff {
 
     public static void main(String[] args) throws Exception {
@@ -27,15 +28,14 @@ public class GetMinDiff {
             for (int i = 0; i < n; i++) {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
-            
+
             int ans = new Solution().getMinDiff(arr, n, k);
             System.out.println(ans);
         }
     }
 }// } Driver Code Ends
 
-
-//User function Template for Java
+// User function Template for Java
 
 class Solution {
 
@@ -65,12 +65,12 @@ class Solution {
     }
 
     static int min = Integer.MIN_VALUE;
-    
+
     void getMinDifferrence(int arr[], int k, int i) {
-//        System.out.println("hello");
-        if (arr.length-1 == i) {
-            min = Math.min(min,getMax(arr)-getMin(arr));
-//            System.out.println("k");
+        // System.out.println("hello");
+        if (arr.length - 1 == i) {
+            min = Math.min(min, getMax(arr) - getMin(arr));
+            // System.out.println("k");
             return;
         }
 
@@ -82,4 +82,5 @@ class Solution {
         arr2[i] -= k;
         getMinDifferrence(arr1, k, i + 1);
     }
+
 }
