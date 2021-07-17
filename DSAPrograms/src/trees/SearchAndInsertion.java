@@ -1,4 +1,4 @@
-package trees.BinaryTrees.BST;
+package trees;
 
 public class SearchAndInsertion {
 
@@ -12,6 +12,7 @@ public class SearchAndInsertion {
             left = right = null;
         }
     }
+
     Node root;
 
     public SearchAndInsertion() {
@@ -23,8 +24,9 @@ public class SearchAndInsertion {
     }
 
     Node insertRec(Node root, int key) {
-        /* If the tree is empty, 
-         return a new node */
+        /*
+         * If the tree is empty, return a new node
+         */
         if (root == null) {
             root = new Node(key);
             return root;
@@ -39,14 +41,14 @@ public class SearchAndInsertion {
         return root;
     }
 
-    // This method mainly calls InorderRec() 
+    // This method mainly calls InorderRec()
 
     void inorder() {
         inorderRec(root);
     }
 
-    // A utility function to  
-    // do inorder traversal of BST 
+    // A utility function to
+    // do inorder traversal of BST
     void inorderRec(Node root) {
         if (root != null) {
             inorderRec(root.left);
@@ -55,27 +57,22 @@ public class SearchAndInsertion {
         }
     }
 
+    // Driver Code
+    public static void main(String[] args) {
+        SearchAndInsertion tree = new SearchAndInsertion();
 
-    // Driver Code 
-    public static void main(String[] args) 
-    { 
-        SearchAndInsertion tree = new SearchAndInsertion(); 
-  
-        /* Let us create following BST 
-              50 
-           /     \ 
-          30      70 
-         /  \    /  \ 
-       20   40  60   80 */
-        tree.insert(50); 
-        tree.insert(30); 
-        tree.insert(20); 
-        tree.insert(40); 
-        tree.insert(70); 
-        tree.insert(60); 
-        tree.insert(80); 
-  
-        // print inorder traversal of the BST 
-        tree.inorder(); 
-    } 
+        /*
+         * Let us create following BST 50 / \ 30 70 / \ / \ 20 40 60 80
+         */
+        tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
+
+        // print inorder traversal of the BST
+        tree.inorder();
+    }
 }
