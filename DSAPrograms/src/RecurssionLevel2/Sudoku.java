@@ -56,59 +56,54 @@ public class Sudoku {
     }
 
     private static void solveSudoku(int[][] board, int i, int j) {
-        if(i==board.length ){
+        if (i == board.length) {
             display(board);
             return;
         }
         int ni = 0;
         int nj = 0;
-        if(j==board[0].length-1){
-            ni = i+1;
+        if (j == board[0].length - 1) {
+            ni = i + 1;
             nj = 0;
-        }
-        else{
+        } else {
             ni = i;
-            nj = j+1;
+            nj = j + 1;
         }
-        if(board[i][j] != 0){
+        if (board[i][j] != 0) {
             solveSudoku(board, ni, nj);
-        }
-        else
-        {
-            for(int po=1;po<=9;po++)
-            {
-                if(isValid(board,i,j,po)){
+        } else {
+            for (int po = 1; po <= 9; po++) {
+                if (isValid(board, i, j, po)) {
                     board[i][j] = po;
                     solveSudoku(board, ni, nj);
                     board[i][j] = 0;
                 }
             }
         }
-        
+
     }
-    
-    public static boolean isValid(int[][] board,int x,int y,int val) {
+
+    public static boolean isValid(int[][] board, int x, int y, int val) {
         for (int j = 0; j < board[0].length; j++) {
-            if(board[x][j] == val){
+            if (board[x][j] == val) {
                 return false;
             }
         }
         for (int i = 0; i < board.length; i++) {
-            if(board[i][y] == val){
+            if (board[i][y] == val) {
                 return false;
             }
         }
-        x = (x/3) * 3;
-        y = (y/3) * 3;
-        for(int i=x;i<x+3;i++){
-            for(int j=y;j<y+3;j++){
-                if(board[i][j] == val){
+        x = (x / 3) * 3;
+        y = (y / 3) * 3;
+        for (int i = x; i < x + 3; i++) {
+            for (int j = y; j < y + 3; j++) {
+                if (board[i][j] == val) {
                     return false;
                 }
             }
         }
-        
-        
+
         return true;
     }
 }
