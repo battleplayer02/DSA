@@ -1,5 +1,6 @@
 package RecurssionLevel2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Magnets {
@@ -47,8 +48,6 @@ public class Magnets {
             bottom[i] = scn.nextInt();
         }
 
-        // write your code here
-        scn.close();
     }
 
 }
