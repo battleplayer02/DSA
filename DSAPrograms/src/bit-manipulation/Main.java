@@ -13,7 +13,9 @@ public class Main {
          * Toggle   kth bit
          * Check    mth bit
          **/
-         turnON(num, i);
+        //  turnON(num, i);
+        System.out.println(bin(73));
+        System.out.println(((~73+1)));
     }
 
     public static void turnON(int n, int i){
